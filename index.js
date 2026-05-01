@@ -503,12 +503,6 @@ Keep answers short, factual, and easy to understand for first-time voters.
 // ─── Health Check Endpoint ──────────────────────────────────────────────────
 let lastHtmlSnippet = "";
 
-app.get('/api/health', (req, res) => {
-  res.json({
-    status: "ok",
-    constituencies: localConstituencies.length,
-    geminiConfigured: !!process.env.GEMINI_API_KEY,
-    timestamp: new Date().toISOString()
   });
 });
 
